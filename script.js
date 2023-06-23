@@ -10,5 +10,6 @@ removeButton.addEventListener('click', function() {
   const selectedIndex = colorSelect.selectedIndex;
 
   // Remove the selected option from the dropdown list
-  colorSelect.remove(selectedIndex);
+  colorSelect.options[selectedIndex].remove();
 });
+
